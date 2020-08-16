@@ -6,4 +6,10 @@ lang: "en-GB"
 collections:
   team:
     order:
+      - lily.md
+      - super.md
+      - matt.md
       - internet.md
+      - creator.md
+      - german.md
+      - sgm.md

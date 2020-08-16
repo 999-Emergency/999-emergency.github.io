@@ -1,0 +1,9 @@
+url: "https://999-emergency.github.io/"
+baseurl: ""
+title: "999 Emergency"
+lang: "en-GB"
+
+collections:
+  team:
+    order:
+      - internet.md

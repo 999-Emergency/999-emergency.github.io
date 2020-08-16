@@ -5,22 +5,22 @@ title: Staff
 <h1>Staff</h1>
 
 <ul>
-  {% for author in site.authors %}
+  {% for member in site.team %}
     <li>
-      <h2>{{ author.name }}</h2>
-      <h3>{{ author.position }}</h3>
-      <p>{{ author.content | markdownify }}</p>
+      <h2>{{ member.name }}</h2>
+      <h3>{{ member.position }}</h3>
+      <p>{{ member.content | markdownify }}</p>
     </li>
   {% endfor %}
 
   <hr>
 
-  {% assign filtered_authors = site.authors | where: 'teams', 'management' %}
-  {% for author in filtered_authors %}
+  {% assign filtered_members = site.member | where: 'teams', 'management' %}
+  {% for member in filtered_members %}
   <li>
-	<h2>{{ author.name }}</h2>
-	<h3>{{ author.position }}</h3>
-	<p>{{ author.content | markdownify }}</p>
+	<h2>{{ member.name }}</h2>
+	<h3>{{ member.position }}</h3>
+	<p>{{ member.content | markdownify }}</p>
   </li>
 {% endfor %}
 </ul>

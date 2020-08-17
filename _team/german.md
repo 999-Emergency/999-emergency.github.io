@@ -4,7 +4,7 @@ name: GermanDude
 roles: [dev, mod]
 titles:
   dev: "Texture Artist"
- links:
+links:
   steam: "https://steamcommunity.com/id/theonlygermandude/"
   github: "https://github.com/GermanDude-ger"
 avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/cc/ccb6a8b4ad23c0f8cae346691c80f28554a7fc79_full.jpg"

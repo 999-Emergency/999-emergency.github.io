@@ -18,5 +18,6 @@ links:
   xbox: no
 titles:
   default: Community Manager
+avatar: "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/3b/3b0eae51e17a60e34b920b25290eb32c197efc9c_medium.jpg"
 ---
 Internet is a person.

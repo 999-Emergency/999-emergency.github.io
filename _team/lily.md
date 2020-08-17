@@ -11,4 +11,4 @@ avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/ava
 store: "https://www.gmodstore.com/users/ThatTransGirlWhoDoesPhoton"
 paypal: "https://paypal.me/LilLilyRose"
 ---
-Lily is a person.
+Lily-Rose is a person that is struggling to pay her Trans Medical bills and just wants to make the UK Roleplay communities have that extra little bit of realism with correct 1:! scale photon vehicles. I was ashamed at how poorly the UK is displayed in Garry's Mod with the lack of vehicles that I wanted to make a change and make a massive UK ELS Package for all servers to enjoy. 

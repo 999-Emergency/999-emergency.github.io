@@ -9,12 +9,12 @@ links:
   twitter: no
   facebook: no
   battlenet: no
-  paypal: no
+  paypal: "https://paypal.me/NetworkNetMagicians"
   patreon: no
   snapchat: no
   soundcloud: no
   tumblr: no
-  youtube: no
+  youtube: "https://www.youtube.com/channel/UCtMZ30k3CWOavXDW6EXflTw"
   xbox: no
 titles:
   default: Community Manager

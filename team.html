@@ -3,24 +3,28 @@ layout: default
 title: Staff
 ---
 <h1>Staff</h1>
-<ul>
-{% for team in site.teams %}
-  <li>
-    <h2>{{ team.name }}</h2>
-    <p>{{ team.content | markdownify }}</p>
-    <h3>Team Members</h3>
-    {% for role in team.roles %}
-      {% assign role_members = site.team | where_exp: "member", "member.roles contains role" %}
-      <ul>
+<section class="container" id="teams">
+  {% for team in site.teams %}
+    <article>
+      <h2>{{ team.name }}</h2>
+      <p>{{ team.content | markdownify }}</p>
+      <h3>Team Members</h3>
+      <section class="card-container">
+      {% for role in team.roles %}
+        {% assign role_members = site.team | where_exp: "member", "member.roles contains role" %}
         {% for member in role_members %}
-          <li>
-            <h2>{{ member.name }}</h2>
-            <h3>{{ member.position }}</h3>
+          <article class="card">
+            <h2>{{ member.name }} - <small>{{ member.position }}</small></h2>
             <p>{{ member.content | markdownify }}</p>
-          </li>
+            {% if member.links.size > 0 %}
+            <contact>
+              {% if member.links.steam %}<a href="{{ member.links.steam }}"><i class="fab fa-steam-square"></i></a>{% endif %}
+            </contact>
+            {% endif %}
+          </article>
         {% endfor %}
-      </ul>
+      {% endfor %}
+      </section>
+      </article>
     {% endfor %}
-  </li>
-{% endfor %}
-</ul>
+</section>

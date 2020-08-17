@@ -1,12 +1,14 @@
+html, body { margin: 0; height: 100%; }
+
 body { background: #ffffff; color: #000000; font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; margin: 0; }
 
-h1, h2, h3, h4, h5, h6, h7 { font-weight: bold; }
+h1, h2, h3, h4, h5, h6, h7 { font-weight: bold; margin-top: 0; }
 
 h1 { font-size: 3em; }
 
 h1 small { color: darkslategrey; }
 
-.content { margin-left: 8px; }
+.content { padding-left: 8px; padding-top: 8px; min-height: calc(100% - 79px); }
 
 nav { background: rgba(30, 30, 30, 0.6); }
 
@@ -18,7 +20,7 @@ nav a:hover { background: rgba(30, 30, 30, 0.8); }
 
 #teams > article { width: 30%; display: inline-block; }
 
-#teams .card { border: 1px black solid; margin: 8px; padding: 0px 0px 4px 8px; border-radius: 4px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+#teams .card { border: 1px rgba(0, 0, 0, 0.5) solid; margin: 8px; padding: 0px 0px 4px 8px; border-radius: 4px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); background: rgba(0, 0, 0, 0.6); }
 
 #teams .card h2 { margin-top: 4px; }
 
@@ -26,16 +28,18 @@ nav a:hover { background: rgba(30, 30, 30, 0.8); }
 
 #teams a { display: inline-block; margin: 4px; }
 
-#teams a > i { color: black; font-size: 48px; }
+#teams a > i { color: white; font-size: 48px; }
 
 #teams a > i.fas { font-size: 40px; }
 
-#teams a:hover > i { color: rgba(0, 0, 0, 0.8); }
+#teams a:hover > i { color: rgba(255, 255, 255, 0.8); }
 
 #teams aside.avatar { float: right; width: 64px; }
 
 #teams aside.avatar img { border-radius: 0 2px 0 0; width: 64px; height: 64px; }
 
 #teams .card-body { width: calc(100% - 64px); display: inline-block; }
+
+#content-team { background-image: url("/assets/img/team.png"); color: white; background-position: center; background-attachment: fixed; background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */

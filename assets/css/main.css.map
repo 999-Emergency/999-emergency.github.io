@@ -3,12 +3,16 @@
 	"file": "main.css",
 	"sources": [
 		"main.scss",
-		"_sass/main.scss"
+		"_sass/main.scss",
+		"_sass/nav.scss",
+		"_sass/team.scss"
 	],
 	"sourcesContent": [
-		"@import \"main\";\n",
-		"$backgroundColor: #ffffff;\n$bodyColor: #000000;\n$bodyFont: -apple-system,BlinkMacSystemFont,\"Segoe UI\",Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\";\n\nbody {\n  background: $backgroundColor;\n  color: $bodyColor;\n  font-family: $bodyFont;\n}\n"
+		"@import \"main\";\n@import \"nav\";\n@import \"team\";\n",
+		"$backgroundColor: #ffffff;\n$bodyColor: #000000;\n$bodyFont: Roboto,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\";\n\nbody {\n  background: $backgroundColor;\n  color: $bodyColor;\n  font-family: $bodyFont;\n  margin: 0;\n}\n\nh1, h2, h3, h4, h5, h6, h7 {\n  font-weight: bold;\n}\n\nh1 {\n  font-size: 3em;\n\n  small {\n    color: darkslategrey\n  }\n}\n\n.content {\n  margin-left: 8px;\n}\n",
+		"nav {\n\ta {\n\t\tpadding: 24px 48px;\n\t\tdisplay: inline-block;\n\t\tcolor: whitesmoke;\n\t\ttext-decoration: none;\n\t\tfont-weight: bold;\n\t\tfont-size: 1.2em;\n\t}\n\n\ta:hover {\n\t\tbackground: rgba(30, 30, 30, 0.8)\n\t}\n\n\tbackground: rgba(30, 30, 30, 0.6)\n}",
+		"#teams {\n\tdisplay: flex;\n\tflex-direction: row;\n\tflex-wrap: wrap;\n\tjustify-content: space-evenly;\n\talign-items: strech;\n\n\t> article {\n\t  width: 30%;\n\t  display: inline-block;\n\t}\n\n\t.card {\n\t\tborder: 1px black solid;\n\t\tmargin: 8px;\n\t\tpadding: 4px 4px 4px 8px;\n\t\tborder-radius: 4px;\n\t\tbox-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n\n\t\th2 {\n\t\t\tmargin-top: 0;\n\t\t}\n\t}\n}\n\na {\n\t> i {\n\t\tcolor: rgba(0, 0, 0, 1)\n\t}\n\n\t&:hover > i {\n\t\tcolor: rgba(0, 0, 0, 0.8)\n\t}\n}"
 	],
 	"names": [],
-	"mappings": "ACIA,AAAA,IAAI,CAAC,EACH,UAAU,EALM,OAAO,EAMvB,KAAK,EALK,OAAO,EAMjB,WAAW,EALF,aAAa,EAAC,kBAAkB,EAAC,UAAU,EAAC,SAAS,EAAC,KAAK,EAAC,UAAU,EAAC,mBAAmB,EAAC,gBAAgB,EAAC,iBAAiB,GAMvI"
+	"mappings": "ACIA,AAAA,IAAI,CAAC,EACH,UAAU,EALM,OAAO,EAMvB,KAAK,EALK,OAAO,EAMjB,WAAW,EALF,MAAM,EAAC,aAAa,EAAC,kBAAkB,EAAC,UAAU,EAAC,SAAS,EAAC,KAAK,EAAC,UAAU,EAAC,mBAAmB,EAAC,gBAAgB,EAAC,iBAAiB,EAM7I,MAAM,EAAE,CAAC,GACV;;AAED,AAAA,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,CAAC,EACzB,WAAW,EAAE,IAAI,GAClB;;AAED,AAAA,EAAE,CAAC,EACD,SAAS,EAAE,GAAG,GAKf;;AAND,AAGE,EAHA,CAGA,KAAK,CAAC,EACJ,KAAK,EAAE,aACT,GAAC;;AAGH,AAAA,QAAQ,CAAC,EACP,WAAW,EAAE,GAAG,GACjB;;ACzBD,AAAA,GAAG,CAAC,EAcH,UAAU,EAAE,qBAAqB,GACjC;;AAfD,AACC,GADE,CACF,CAAC,CAAC,EACD,OAAO,EAAE,SAAS,EAClB,OAAO,EAAE,YAAY,EACrB,KAAK,EAAE,UAAU,EACjB,eAAe,EAAE,IAAI,EACrB,WAAW,EAAE,IAAI,EACjB,SAAS,EAAE,KAAK,GAChB;;AARF,AAUC,GAVE,CAUF,CAAC,CAAC,KAAK,CAAC,EACP,UAAU,EAAE,qBAAqB,GACjC;;ACZF,AAAA,MAAM,CAAC,EACN,OAAO,EAAE,IAAI,EACb,cAAc,EAAE,GAAG,EACnB,SAAS,EAAE,IAAI,EACf,eAAe,EAAE,YAAY,EAC7B,WAAW,EAAE,MAAM,GAkBnB;;AAvBD,AAOC,MAPK,GAOH,OAAO,CAAC,EACR,KAAK,EAAE,GAAG,EACV,OAAO,EAAE,YAAY,GACtB;;AAVF,AAYC,MAZK,CAYL,KAAK,CAAC,EACL,MAAM,EAAE,eAAe,EACvB,MAAM,EAAE,GAAG,EACX,OAAO,EAAE,eAAe,EACxB,aAAa,EAAE,GAAG,EAClB,UAAU,EAAE,CAAC,CAAC,GAAG,CAAC,GAAG,CAAC,CAAC,CAAC,kBAAkB,GAK1C;;AAtBF,AAmBE,MAnBI,CAYL,KAAK,CAOJ,EAAE,CAAC,EACF,UAAU,EAAE,CAAC,GACb;;AAIH,AACC,CADA,GACE,CAAC,CAAC,EACH,KAAK,EAAE,KAAgB,GACvB;;AAHF,AAKC,CALA,CAKE,KAAK,GAAG,CAAC,CAAC,EACX,KAAK,EAAE,kBAAkB,GACzB"
 }

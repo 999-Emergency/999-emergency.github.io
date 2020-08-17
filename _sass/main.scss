@@ -32,3 +32,13 @@ h1 {
   padding-top: 8px;
   min-height: calc(100% - 79px);
 }
+
+#content-index {
+  .flex-container {
+    display: flex;
+  }
+
+  .center {
+    justify-content: center;
+  }
+}

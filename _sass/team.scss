@@ -25,10 +25,11 @@
 
 a {
 	> i {
-		color: rgba(0, 0, 0, 1)
+		color: rgba(0, 0, 0, 1);
+		font-size: 48px;
 	}
 
 	&:hover > i {
-		color: rgba(0, 0, 0, 0.8)
+		color: rgba(0, 0, 0, 0.8);
 	}
 }

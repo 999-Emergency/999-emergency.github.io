@@ -18,12 +18,24 @@ nav a:hover { background: rgba(30, 30, 30, 0.8); }
 
 #teams > article { width: 30%; display: inline-block; }
 
-#teams .card { border: 1px black solid; margin: 8px; padding: 4px 4px 4px 8px; border-radius: 4px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+#teams .card { border: 1px black solid; margin: 8px; padding: 0px 0px 4px 8px; border-radius: 4px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
 
-#teams .card h2 { margin-top: 0; }
+#teams .card h2 { margin-top: 4px; }
 
-a > i { color: black; }
+#teams contact { display: flex; align-items: center; flex-wrap: wrap; flex-direction: row; }
 
-a:hover > i { color: rgba(0, 0, 0, 0.8); }
+#teams a { display: inline-block; margin: 4px; }
+
+#teams a > i { color: black; font-size: 48px; }
+
+#teams a > i.fas { font-size: 40px; }
+
+#teams a:hover > i { color: rgba(0, 0, 0, 0.8); }
+
+#teams aside.avatar { float: right; width: 64px; }
+
+#teams aside.avatar img { border-radius: 0 2px 0 0; width: 64px; height: 64px; }
+
+#teams .card-body { width: calc(100% - 64px); display: inline-block; }
 
 /*# sourceMappingURL=main.css.map */

@@ -13,8 +13,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install Dependencies
-        run: bundle install --production
+        run: sudo apt-get install -y bundle && bundle install --production
       - name: Build Site
-        run: sudo apt-get install -y bundle && bundle exec jekyll build
+        run: bundle exec jekyll build
       - name: Take Stock
         run: ls .

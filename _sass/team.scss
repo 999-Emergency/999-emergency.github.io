@@ -13,23 +13,51 @@
 	.card {
 		border: 1px black solid;
 		margin: 8px;
-		padding: 4px 4px 4px 8px;
+		padding: 0px 0px 4px 8px;
 		border-radius: 4px;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
 		h2 {
-			margin-top: 0;
+			margin-top: 4px;
 		}
 	}
-}
 
-a {
-	> i {
-		color: rgba(0, 0, 0, 1);
-		font-size: 48px;
+	contact {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		flex-direction: row;
 	}
 
-	&:hover > i {
-		color: rgba(0, 0, 0, 0.8);
+	a {
+		display: inline-block;
+		margin: 4px;
+
+		> i {
+			color: rgba(0, 0, 0, 1);
+			font-size: 48px;
+
+			&.fas {
+				font-size: 40px;
+			}
+		}
+
+		&:hover > i {
+			color: rgba(0, 0, 0, 0.8);
+		}
+	}
+
+	aside.avatar {
+		float: right;
+		width: 64px;
+
+		img {
+			border-radius: 0 2px 0 0;
+		}
+	}
+
+	.card-body {
+		width: calc(100% - 64px);
+		display: inline-block;
 	}
 }

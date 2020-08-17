@@ -14,7 +14,7 @@ collections:
       - german.md
       - sgm.md
   teams:
-    order:
-      - management.md
-      - development.md
-      - moderation.md
+    # order:
+    #   - management.md
+    #   - development.md
+    #   - moderation.md

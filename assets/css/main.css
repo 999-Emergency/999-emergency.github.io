@@ -6,7 +6,7 @@ h1, h2, h3, h4, h5, h6, h7 { font-weight: bold; margin-top: 0; }
 
 h1 { font-size: 3em; }
 
-h1 small { color: darkslategrey; }
+h1 small { color: lightblue; }
 
 .content { padding-left: 16px; padding-top: 8px; min-height: calc(100% - 79px); }
 
@@ -41,5 +41,7 @@ nav a:hover { background: rgba(30, 30, 30, 0.8); }
 #teams .card-body { width: calc(100% - 64px); display: inline-block; }
 
 #content-team { background-image: url("/assets/img/team.png"); color: white; background-position: center; background-attachment: fixed; background-size: cover; }
+
+#content-index { background-image: url("/assets/img/index.png"); color: white; background-position: center; background-attachment: fixed; background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */

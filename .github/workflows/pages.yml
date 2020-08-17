@@ -1,0 +1,20 @@
+on:
+  push:
+    branches:
+      - master
+
+name: Page Deploy
+
+jobs:
+  build:
+    name: Page Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: bundle install --production
+      - name: Build Site
+        run: bundle exec jekyll build
+      - name: Take Stock
+        run: ls .

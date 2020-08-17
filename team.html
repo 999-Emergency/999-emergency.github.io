@@ -5,7 +5,7 @@ title: Staff
 <h1>Staff</h1>
 <section class="container" id="teams">
   {% for team in site.teams %}
-    <article>
+      <article>
       <h2>{{ team.name }}</h2>
       <p>{{ team.content | markdownify }}</p>
       <h3>Team Members</h3>
@@ -14,13 +14,32 @@ title: Staff
         {% assign role_members = site.team | where_exp: "member", "member.roles contains role" %}
         {% for member in role_members %}
           <article class="card">
-            <h2>{{ member.name }} - <small>{{ member.position }}</small></h2>
-            <p>{{ member.content | markdownify }}</p>
-            {% if member.links.size > 0 %}
-            <contact>
-              {% if member.links.steam %}<a href="{{ member.links.steam }}"><i class="fab fa-steam-square"></i></a>{% endif %}
-            </contact>
-            {% endif %}
+            <div class="card-body">
+              <h2>{{ member.name }} - <small>{% if member.titles[role] %}{{ member.titles[role] }}{% elsif member.titles.default %}{{ member.titles.default }}{% else %}{{ team.default_title }}{% endif %}</small></h2>
+
+              <p>{{ member.content | markdownify }}</p>
+              {% if member.links.size > 0 %}
+              <contact>
+                {% if member.links.steam %}<a href="{{ member.links.steam }}"><i class="fab fa-steam-square"></i></a>{% endif %}
+                {% if member.links.github %}<a href="{{ member.links.github }}"><i class="fab fa-github-square"></i></a>{% endif %}
+                {% if member.links.youtube %}<a href="{{ member.links.youtube }}"><i class="fab fa-youtube-square"></i></a>{% endif %}
+                {% if member.links.twitter %}<a href="{{ member.links.twitter }}"><i class="fab fa-twitter-square"></i></a>{% endif %}
+                {% if member.links.facebook %}<a href="{{ member.links.facebook }}"><i class="fab fa-facebook-square"></i></a>{% endif %}
+                {% if member.links.tumblr %}<a href="{{ member.links.tumblr }}"><i class="fab fa-tumblr-square"></i></a>{% endif %}
+                {% if member.links.snapchat %}<a href="{{ member.links.snapchat }}"><i class="fab fa-snapchat-square"></i></a>{% endif   %}
+                {% if member.links.store %}<a href="{{ member.links.store }}"><i class="fas fa-cash-register"></i></a>{% endif %}
+                {% if member.links.battlenet %}<a href="{{ member.links.battlenet }}"><i class="fab fa-battle-net"></i></a>{% endif %}
+                {% if member.links.paypal %}<a href="{{ member.links.paypal }}"><i class="fab fa-paypal"></i></a>{% endif %}
+                {% if member.links.patreon %}<a href="{{ member.links.patreon }}"><i class="fab fa-patreon"></i></a>{% endif %}
+                {% if member.links.soundcloud %}<a href="{{ member.links.soundcloud }}"><i class="fab fa-soundcloud"></i></a>{% endif %}
+                {% if member.links.xbox %}<a href="{{ member.links.xbox }}"><i class="fab fa-xbox"></i></a>{% endif %}
+              </contact>
+              {% endif %}
+            </div>
+            <aside class="avatar">
+              <img src="{% if member.avatar %}{{ member.avatar }}{% else %}{{ "/assets/img/default_avatar.png" | relative_url }}{% endif %}">
+            </aside>
+
           </article>
         {% endfor %}
       {% endfor %}

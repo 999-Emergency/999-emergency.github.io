@@ -4,6 +4,11 @@ title: "999 Emergency"
 lang: "en-GB"
 
 collections:
+  teams:
+    order:
+      - management.md
+      - development.md
+      - moderation.md
   team:
     order:
       - lily.md
@@ -13,8 +18,3 @@ collections:
       - creator.md
       - german.md
       - sgm.md
-  teams:
-    # order:
-    #   - management.md
-    #   - development.md
-    #   - moderation.md

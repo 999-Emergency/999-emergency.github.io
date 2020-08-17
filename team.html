@@ -3,70 +3,24 @@ layout: default
 title: Staff
 ---
 <h1>Staff</h1>
-<!-- tabs: management, moderation, development -->
-
-<div class="tab" id="management">
-  <!-- mngt: cm / pm / pco -->
-  <ul>
-    {% assign filtered_members = site.team | where_exp: "member", "member.teams contains 'management' or member.roles contains 'cm' or member.roles contains 'pm' or member.roles contains 'pco'" %}
-    {% for member in filtered_members %}
-      <li>
-	      <h2>{{ member.name }}</h2>
-	      <h3>{{ member.position }}</h3>
-	      <p>{{ member.content | markdownify }}</p>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
-
-<hr>
-
-<div class="tab" id="development">
-  <!-- dev: management / dev -->
-  <ul>
-    {% assign filtered_members = site.team | where_exp: "member", "member.teams contains 'management' or member.roles contains 'cm' or member.roles contains 'pm' or member.roles contains 'pco'" %}
-    {% for member in filtered_members %}
-      <li>
-	      <h2>{{ member.name }}</h2>
-	      <h3>{{ member.position }}</h3>
-	      <p>{{ member.content | markdownify }}</p>
-      </li>
-    {% endfor %}
-
-    {% assign filtered_members = site.team | where_exp: "member", "member.roles contains 'dev'" %}
-    {% for member in filtered_members %}
-      <li>
-	      <h2>{{ member.name }}</h2>
-	      <h3>{{ member.position }}</h3>
-	      <p>{{ member.content | markdownify }}</p>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
-
-<hr>
-
-<div class="tab" id="moderation">
-  <!-- mod: cm / mod -->
-  <ul>
-    {% assign filtered_members = site.team | where_exp: "member", "member.roles contains 'cm'" %}
-    {% for member in filtered_members %}
-      <li>
-	      <h2>{{ member.name }}</h2>
-	      <h3>{{ member.position }}</h3>
-	      <p>{{ member.content | markdownify }}</p>
-      </li>
-    {% endfor %}
-
-    {% assign filtered_members = site.team | where_exp: "member", "member.roles contains 'mod'" %}
-    {% for member in filtered_members %}
-      {% unless member.roles contains 'cm' %}
-        <li>
-  	      <h2>{{ member.name }}</h2>
-	        <h3>{{ member.position }}</h3>
-	        <p>{{ member.content | markdownify }}</p>
-        </li>
-      {% endunless %}
-    {% endfor %}
-  </ul>
-</div>
+<ul>
+{% for team in site.teams %}
+  <li>
+    <h2>{{ team.name }}</h2>
+    <p>{{ team.content | markdownify }}</p>
+    <h3>Team Members</h3>
+    {% for role in team.roles %}
+      {% assign role_members = site.team | where_exp: "member", "member.roles contains role" %}
+      <ul>
+        {% for member in role_members %}
+          <li>
+            <h2>{{ member.name }}</h2>
+            <h3>{{ member.position }}</h3>
+            <p>{{ member.content | markdownify }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+{% endfor %}
+</ul>

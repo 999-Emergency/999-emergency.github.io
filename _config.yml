@@ -18,3 +18,25 @@ collections:
       - creator.md
       - german.md
       - sgm.md
+
+plugins:
+  - kramdown
+  - kramdown-parser-gfm
+  - liquid
+  - rouge
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-coffeescript
+  - jekyll-seo-tag
+  - jekyll-github-metadata
+  - jekyll-avatar
+  - jekyll-remote-theme
+  - jemoji
+  - jekyll-mentions
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-titles-from-headings

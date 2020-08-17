@@ -4,3 +4,11 @@
 @import "main";
 @import "nav";
 @import "team";
+
+#content-team {
+	background-image: url("{{ '/assets/img/team.png' | relative_url }}");
+	color: white;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}

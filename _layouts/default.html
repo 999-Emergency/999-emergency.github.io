@@ -9,7 +9,7 @@
   </head>
   <body>
     {% include nav.html %}
-    <div class="content">
+    <div class="content" id="content-{{ page.name | stripext }}">
       {{ content }}
     </div>
   </body>

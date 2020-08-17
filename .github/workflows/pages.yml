@@ -15,6 +15,6 @@ jobs:
       - name: Install Dependencies
         run: bundle install --production
       - name: Build Site
-        run: bundle exec jekyll build
+        run: sudo apt-get install -y bundle && bundle exec jekyll build
       - name: Take Stock
         run: ls .

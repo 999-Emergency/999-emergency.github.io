@@ -2,6 +2,6 @@
 short_name: sgm
 name: SentryGunMan
 position: Developer
-teams: [development]
 roles: [dev]
 ---
+Sentry is a person.

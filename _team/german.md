@@ -2,7 +2,8 @@
 short_name: german
 name: GermanDude
 position: Texture Artist & Moderator
-teams: [moderation, development]
 roles: [dev, mod]
+titles:
+  dev: "Texture Artist"
 ---
 German is a person.

@@ -2,7 +2,9 @@
 short_name: super
 name: Super Mighty
 position: Project Coordinator
-teams: [management, moderation, development]
-roles: [pco]
+roles: [pco, dev]
+titles:
+  default: Project Coordinator
+  dev: Developer
 ---
 Super is a person.

@@ -1,8 +1,8 @@
 ---
 short_name: lily
 name: Lily-Rose
-position: Project Manager
-teams: [management, moderation, development]
 roles: [pm]
+titles:
+  default: Project Manager
 ---
 Lily is a person.

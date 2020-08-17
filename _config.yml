@@ -13,3 +13,8 @@ collections:
       - creator.md
       - german.md
       - sgm.md
+  teams:
+    order:
+      - management.md
+      - development.md
+      - moderation.md

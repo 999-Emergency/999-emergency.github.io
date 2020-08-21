@@ -1,6 +1,6 @@
 ---
 short_name: sgm
 name: SentryGunMan
-roles: [dev]
+roles: [dev, mod]
 ---
 better than tdm

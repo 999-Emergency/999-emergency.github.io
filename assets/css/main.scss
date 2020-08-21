@@ -4,19 +4,23 @@
 @import "main";
 @import "nav";
 @import "team";
+@import "gallery";
 
-#content-team {
-	background-image: url("{{ '/assets/img/team.png' | relative_url }}");
+div.content {
 	color: white;
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
 }
 
+#content-team {
+	background-image: url("{{ '/assets/img/team.png' | relative_url }}");
+}
+
 #content-index {
 	background-image: url("{{ '/assets/img/index.png' | relative_url }}");
-	color: white;
-	background-position: center;
-	background-attachment: fixed;
-	background-size: cover;
+}
+
+#content-gallery {
+	background-image: url("{{ '/assets/img/gallery.png' | relative_url }}");
 }

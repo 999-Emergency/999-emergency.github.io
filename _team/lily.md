@@ -7,6 +7,7 @@ default: Project Manager
 links:
   steam: "https://steamcommunity.com/id/OfficialPhotonThot"
   github: "https://github.com/Princess-Lily"
+  youtube: "https://www.youtube.com/user/cheese3243242342342/featured"
   store: "https://www.gmodstore.com/users/ThatTransGirlWhoDoesPhoton"
   paypal: "https://paypal.me/LilLilyRose"
   patreon: "https://gf.me/u/ysub2g"

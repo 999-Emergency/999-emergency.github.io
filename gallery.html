@@ -3,7 +3,7 @@ layout: default
 title: Gallery
 ---
 <section id="gallery" class="card-container">
-	{% assign: gallery_files = site.static_files | where_exp: "file","file.path contains '/assets/img/showcase/'" %}
+	{% assign: gallery_files = site.static_files | where_exp: "file","file.path contains '/assets/img/showcase/'" | sort: "basename" | reverse %}
 	{% for file in gallery_files %}
 	<article class="card">
 		<img src="{{ file.path | relative_url }}">

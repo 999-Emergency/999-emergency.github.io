@@ -14,6 +14,8 @@ h1 small { color: lightblue; }
 
 #content-index .center { justify-content: center; }
 
+a { font-weight: bold; color: lightblue; }
+
 nav { background: #181818; }
 
 nav a { padding: 24px 48px; display: inline-block; color: whitesmoke; text-decoration: none; font-weight: bold; font-size: 1.2em; }
@@ -44,11 +46,11 @@ nav a:hover { background: rgba(30, 30, 30, 0.8); }
 
 #teams .card-body { width: calc(100% - 64px); display: inline-block; }
 
-#gallery { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly; align-items: strech; }
+#gallery { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly; align-items: center; }
 
 #gallery > article { width: 30%; display: inline-block; }
 
-#gallery .card { border: 1px rgba(0, 0, 0, 0.5) solid; margin: 8px; padding: 0; border-radius: 4px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); background: rgba(0, 0, 0, 0.6); display: block; max-width: 25%; min-width: 400px; }
+#gallery .card { border: 1px rgba(0, 0, 0, 0.5) solid; margin: 8px; padding: 0; border-radius: 4px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); background: rgba(0, 0, 0, 0.6); display: block; max-width: 25%; min-width: 400px; height: max-content; }
 
 #gallery .card img { display: block; max-width: 100%; max-height: 100%; border-radius: 4px; padding: 0; margin: 0; }
 

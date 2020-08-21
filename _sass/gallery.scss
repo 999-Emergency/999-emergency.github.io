@@ -3,7 +3,7 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	align-items: strech;
+	align-items: center;
 
 	> article {
 	  width: 30%;
@@ -21,6 +21,7 @@
 
 		max-width: 25%;
 		min-width: 400px;
+		height: max-content;
 
 		img {
 			display: block;

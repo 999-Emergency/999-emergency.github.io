@@ -12,8 +12,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Fetch Gem Dep Cache
+        uses: actions/cache@v2
+        with:
+          path: vendor/cache
+          id: gem-cache
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
       - name: Install Dependencies
-        run: sudo gem install bundler && bundler install --deployment
+        run: sudo gem install bundler && bundler config set deployment 'true' && bundler install
+      - name: Build Cache
+        run: bundler cache
+        if: steps.gem-cache.outputs.cache-hit != 'true'
       - name: Build Site
         run: bundle exec jekyll build
       - name: Deploy

@@ -6,7 +6,7 @@ title: Gallery
 <p>Disclaimer, all the images on this page are <em>automatically uploaded</em> from <a href="https://discordapp.com/channels/734128619735089233/734152305426825256">showcase Discord channel</a>.</p>
 <section id="gallery" class="card-container">
 	{% assign: gallery_files = site.static_files | where_exp: "file","file.path contains '/assets/img/showcase/'" | sort: "basename" | reverse %}
-	{% for file in gallery_files %}
+	{% for file in gallery_files limit:20 %}
 	<article class="card">
 		<img src="{{ file.path | relative_url }}">
 	</article>

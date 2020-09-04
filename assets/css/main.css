@@ -16,11 +16,17 @@ h1 small { color: lightblue; }
 
 a { font-weight: bold; color: lightblue; }
 
-nav { background: #181818; }
+nav { display: flex; justify-content: space-between; flex-wrap: nowrap; min-width: fit-content; background: #181818; }
 
-nav a { padding: 24px 48px; display: inline-block; color: whitesmoke; text-decoration: none; font-weight: bold; font-size: 1.2em; }
+nav div { white-space: nowrap; }
+
+nav div > * { display: inline-block; }
+
+nav a { padding: 20px 36px; display: inline-block; color: whitesmoke; text-decoration: none; font-weight: bold; font-size: 1.2em; }
 
 nav a:hover { background: rgba(30, 30, 30, 0.8); }
+
+nav a > i { font-size: 10px; vertical-align: top; color: lightgray; }
 
 #teams { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly; align-items: strech; }
 

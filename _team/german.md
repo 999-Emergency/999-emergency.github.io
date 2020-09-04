@@ -11,4 +11,4 @@ links:
   store: "https://www.gmodstore.com/users/76561198347062472"
 avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/cc/ccb6a8b4ad23c0f8cae346691c80f28554a7fc79_full.jpg"
 ---
-German is a person.
+German is a person who is making skins and is a member of the Photon Lighting Engine Core team. germans sms property too stay away

@@ -1,4 +1,17 @@
 nav {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	min-width: fit-content;
+
+	div {
+		white-space: nowrap;
+
+		> * {
+			display: inline-block;
+		}
+	}
+
 	a {
 		padding: 24px 48px;
 		display: inline-block;
@@ -6,10 +19,16 @@ nav {
 		text-decoration: none;
 		font-weight: bold;
 		font-size: 1.2em;
-	}
 
-	a:hover {
-		background: rgba(30, 30, 30, 0.8)
+		&:hover {
+			background: rgba(30, 30, 30, 0.8);
+		}
+
+		> i {
+			font-size: 10px;
+			vertical-align: top;
+			color: lightgray;
+		}
 	}
 
 	background: rgb(24, 24, 24)

@@ -1,3 +1,6 @@
 - name: Discord
   link: https://discord.gg/AkQYKCD
   external: true
+- name: GitHub
+  link: https://github.com/999-Emergency/
+  external: true

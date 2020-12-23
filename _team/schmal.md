@@ -1,6 +1,6 @@
 ---
-short_name: unknown
-name: Unkn0wn_F1R3
+short_name: schmal
+name: Schmal
 roles: [mod]
 links:
   steam: ""

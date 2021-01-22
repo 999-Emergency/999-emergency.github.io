@@ -6,9 +6,9 @@ titles:
 default: Project Manager
 links:
   steam: "https://steamcommunity.com/id/OfficialPhotonThot"
-  github: "https://www.gmodstore.com/users/Lily-Rose"
+  github: "https://github.com/Princess-Lily" 
   youtube: "https://www.youtube.com/user/cheese3243242342342/featured"
-  store: "https://www.gmodstore.com/users/ThatTransGirlWhoDoesPhoton"
+  store: "https://www.gmodstore.com/users/Lily-Rose"
   paypal: "https://paypal.me/LilLilyRose"
 avatar: "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/06/06eb5999dbbf3ba12f0c87564cafb4c22f97749e_full.jpg"
 ---

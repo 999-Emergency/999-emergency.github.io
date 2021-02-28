@@ -9,4 +9,4 @@ avatar: "https://avatars0.githubusercontent.com/u/68227764?s=460&u=f9ef95ccf5fd6
 titles:
   dev: "Texture Artist"
 ---
-{{ page.name }} hasn't set up a profile yet.
+{{ page.name }} Creates skins and textures for cars, playermodels and other content.

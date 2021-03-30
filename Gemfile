@@ -5,7 +5,7 @@ gem 'jekyll-sass-converter', '~> 2.0'
 
 group :jekyll_plugins do
     # Converters
-    gem 'kramdown', '~> 2.3.0'
+    gem 'kramdown', '~> 2.3.1'
     gem 'kramdown-parser-gfm', '~> 1.1.0'
 
 	# Misc

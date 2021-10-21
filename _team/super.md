@@ -3,7 +3,7 @@ short_name: super
 name: Super Mighty
 roles: [pco, dev]
 titles:
-  default: Project Coordinator
+  default: VCmod Lead, Managerment Team 
   dev: Developer
 links:
   steam: "https://steamcommunity.com/id/deputyjoneswantstocuddlewithme/"

@@ -1,9 +1,9 @@
 ---
 short_name: Lily
 name: Lily-Rose
-roles: [pm]
+roles: [PL]
 titles:
-default: Project Manager, Photon Lead, Managerment Team
+default: Public Relations, Photon Lead, Managerment Team
 links:
   steam: "https://steamcommunity.com/id/OfficialPhotonThot"
   github: "https://github.com/Princess-Lily" 

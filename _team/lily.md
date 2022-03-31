@@ -1,7 +1,7 @@
 ---
 short_name: Lily
 name: Lily-Rose
-roles: [PM]
+roles: [pm]
 titles:
 default: Public Relations, Photon Lead, Managerment Team
 links:
